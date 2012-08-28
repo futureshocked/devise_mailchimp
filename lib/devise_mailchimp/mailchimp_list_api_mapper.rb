@@ -37,7 +37,7 @@ module Devise
           list_names = [list_names] unless list_names.is_a?(Array)
           list_names.each do |list_name|
             list_id = name_to_id(list_name)
-            hominid.list_subscribe(list_id, email, {}, 'html', @double_opt_in, true, true, false)
+            hominid.list_subscribe(list_id, email, {}, 'html', false, true, true, false)
           end
         end
 
